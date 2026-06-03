@@ -1,0 +1,13 @@
+{
+  "name": "delego",
+  "owner": { "name": "Delego-Dev", "email": "koishore@gmail.com" },
+  "description": "delego — a policy & audit firewall for agent actions. Skills, review agents, and the MCP server in one plugin.",
+  "plugins": [
+    {
+      "name": "delego",
+      "source": "./delego",
+      "description": "Set up and operate the delego firewall: init, policy drafting + adversarial review, approval triage, audit explaining/investigation, and the delego MCP server.",
+      "version": "0.1.0"
+    }
+  ]
+}

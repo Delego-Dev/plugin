@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "delego": {
+      "command": "delego-mcp",
+      "env": { "DELEGO_HOME": "${CLAUDE_PROJECT_DIR}/.claude/.delego" }
+    }
+  }
+}

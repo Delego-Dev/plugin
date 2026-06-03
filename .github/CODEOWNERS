@@ -1,0 +1,8 @@
+# delego plugin — the owner reviews all contributions.
+* @koishore
+
+# Higher stakes: the plugin/marketplace manifests and the bundled MCP server
+# affect every install. Maintainer review required.
+/.claude-plugin/        @koishore
+/delego/.claude-plugin/ @koishore
+/delego/.mcp.json       @koishore
