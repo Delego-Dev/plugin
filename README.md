@@ -74,11 +74,19 @@ delego/
 `python scripts/validate.py` (run in CI) checks the manifests and every
 skill/agent's frontmatter.
 
-## Standalone alternative
+## Without the plugin (à la carte)
 
-Prefer not to use a plugin? The same skills and agents are available as plain
-repos to clone into `.claude/`: [skills](https://github.com/Delego-Dev/skills)
-and [agents](https://github.com/Delego-Dev/agents).
+Prefer not to use a plugin? Clone this repo and run `install.sh` from your
+project root — it copies the skills and agents into `.claude/` with a `delego-`
+name prefix (so `/delego-init`, `@agent-delego-policy-reviewer`):
+
+```bash
+git clone https://github.com/Delego-Dev/plugin /tmp/delego-plugin
+cd your-project && /tmp/delego-plugin/install.sh
+```
+
+(The standalone `Delego-Dev/skills` and `Delego-Dev/agents` repos are **archived**
+— this repo is the single source of truth.)
 
 ## License
 
