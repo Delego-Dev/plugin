@@ -1,6 +1,6 @@
 ---
 name: init
-description: Initialize delego — the policy & audit firewall for agent actions — in the current project. Installs the package, creates a project-scoped firewall home with signing keys and a starter policy, and verifies it. The delego MCP server is provided by this plugin, so this does NOT touch .mcp.json. Use when the user wants to "set up delego", "add delego to this project", or "initialize the delego firewall".
+description: Initialize delego — intent-bound action authorization for AI agents — in the current project. Installs the package, creates a project-scoped delego home with signing keys and a starter policy, and verifies it. The delego MCP server is provided by this plugin, so this does NOT touch .mcp.json. Use when the user wants to "set up delego", "add delego to this project", or "initialize delego".
 ---
 
 # init
@@ -34,7 +34,7 @@ Require Python ≥ 3.10.
    `delego-mcp` is on the PATH Claude Code launches the MCP server with (activate
    the venv, or install into the environment Claude Code uses).
 
-2. **Create the firewall home** the plugin's MCP server points at:
+2. **Create the delego home** the plugin's MCP server points at:
    ```bash
    .venv/bin/delego --home .claude/.delego init
    ```
