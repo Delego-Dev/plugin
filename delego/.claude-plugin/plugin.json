@@ -1,7 +1,7 @@
 {
   "name": "delego",
   "version": "0.1.0",
-  "description": "Policy & audit firewall for agent actions — skills, review agents, and the MCP server.",
+  "description": "Intent-bound action authorization for AI agents — skills, review agents, and the MCP server.",
   "author": { "name": "Koishore Roy", "email": "koishore@gmail.com" },
   "homepage": "https://github.com/Delego-Dev/delego",
   "repository": "https://github.com/Delego-Dev/plugin",

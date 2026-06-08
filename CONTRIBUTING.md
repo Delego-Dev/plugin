@@ -27,7 +27,7 @@ review it as you would code that executes on someone else's machine.
   truncation of the most recent receipts, and the policy can't see the URL query
   string (until protocol 0.3).
 - **Safe instructions.** No destructive or credential-exfiltrating guidance, and
-  nothing that bypasses the firewall.
+  nothing that bypasses delego.
 - **A precise `description`.** It drives auto-delegation — specific enough to fire
   on the right requests, not so broad it hijacks unrelated ones.
 

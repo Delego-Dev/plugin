@@ -17,7 +17,7 @@
 - [ ] Frontmatter is valid and the `description` is **precise** — it fires on the
   right requests only, and won't hijack unrelated ones.
 - [ ] Instructions are **safe** (nothing destructive, credential-leaking, or that
-  bypasses the firewall) and **delego-accurate** (fail-closed, the invariants,
+  bypasses delego) and **delego-accurate** (fail-closed, the invariants,
   honest caveats — no overselling the audit).
 - [ ] I did **not** change the plugin/marketplace manifest or the MCP config
   (or a maintainer has signed off — these affect every install).

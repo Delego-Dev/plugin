@@ -1,7 +1,7 @@
 # delego — Claude Code plugin
 
-The one-command way to get [delego](https://github.com/Delego-Dev/delego) — the
-policy & audit firewall for agent actions — into a Claude Code project: its
+The one-command way to get [delego](https://github.com/Delego-Dev/delego) —
+intent-bound action authorization for AI agents — into a Claude Code project: its
 **skills**, **review agents**, and the **MCP server**, all in a single plugin.
 This repo is both the plugin and its own marketplace.
 
@@ -22,7 +22,7 @@ spots (no manual cloning into `.claude/`). Then:
 ```
 
 `/delego:init` installs the `delego` Python package (`pip install "delego[mcp]"`),
-creates the project firewall home at `.claude/.delego`, drafts/validates a policy,
+creates the project's delego home at `.claude/.delego`, drafts/validates a policy,
 and verifies. The plugin's MCP server reads `DELEGO_HOME = <project>/.claude/.delego`
 and activates once the package is installed and the home exists.
 
@@ -36,7 +36,7 @@ and activates once the package is installed and the home exists.
 **Skills** (`/delego:<name>`)
 | Skill | Use it to… |
 |---|---|
-| `init` | Install delego, create the firewall home, verify. |
+| `init` | Install delego, create the delego home, verify. |
 | `policy-drafter` | Draft/harden a fail-closed `policy.yaml`. |
 | `approval-triage` | Review pending approvals and approve/deny. |
 | `audit-explainer` | Verify the signed chain and explain what the agent did. |
@@ -49,7 +49,7 @@ and activates once the package is installed and the home exists.
 | `audit-investigator` | Verify the ledger, reconstruct authority paths, flag anomalies. |
 
 **MCP server** — `delego_propose_action`, `delego_resolve_action`,
-`delego_audit_tail`, `delego_show_policy` (the agent's interface to the firewall).
+`delego_audit_tail`, `delego_show_policy` (the agent's interface to delego).
 
 ## Typical flow
 
